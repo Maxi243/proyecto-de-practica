@@ -1,0 +1,313 @@
+body {
+	margin: 0;
+	padding: 0;
+	max-width: 100vw; /* Limita al ancho de la ventana */
+	overflow-x: hidden; /* Oculta cualquier desborde horizontal */
+	background-color: #000;
+}
+
+.contenedor{
+	background-color:black;
+	width: 100%;
+	padding: 15px;
+	flex-wrap: wrap;
+	text-align: center;
+	display: flex;
+	box-sizing: border-box;
+	align-items: flex-start;
+}
+.header_h1{
+	background-color: black;
+    width: 50%;              /* Mitad izquierda */
+    padding: 20px;
+    box-sizing: border-box;
+	color:  white;
+	display: flex;
+	flex-direction: column;/* Apila textos e imagen secundaria */
+}
+.h1{
+  	font-size: 48px;
+	margin-top: 10px;
+  	margin: 0;  
+	text-align: left;  
+	color: aliceblue;
+}
+
+.h2{
+	font-size: 48px;
+	margin: 0;
+	margin-top: 5px;
+	text-align: left;
+	color: green;
+
+}
+p{
+	color: aliceblue;
+	margin: 0px;
+	text-align: left;
+	margin-top: 50px;
+}
+
+.titulo{
+	font-size: 60px;
+	font-family: 'Dancing Script', cursive;
+	color: #fff;
+	text-align: left;
+	text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+	animation: brillar 1.5s ease-in-out infinite alternate;
+	position: relative;
+	left: 60px;
+
+  }
+  
+  @keyframes brillar {
+	from { text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff; }
+	to { text-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 50px #0ff; }
+  }
+
+.imagen {
+    width: 50%;              /* Ocupa la mitad derecha */
+	background-color: white;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;            /* Misma altura que el contenedor */
+    object-fit: cover;        /* Ajusta la imagen sin deformarla */
+}
+
+.imagen2{
+	display: block;          /* Se asegura que quede en una nueva línea */
+    margin-top: 20px;        /* Espacio entre el texto y la imagen */
+    width: 80%;              /* Ocupa el 80% del ancho de la parte izquierda */
+    height: auto;            /* Mantiene proporción */
+    border-radius: 100px;     /* Bordes redondeados opcional */
+	text-align: left;
+	position: relative;
+	left: -45px;
+}
+
+.logo h3{
+	text-align: right;
+    padding-right: 30px;
+	color: coral;
+}
+
+.botones{
+	background-color: #222;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	flex-wrap: wrap;
+	text-align: center;
+	border-radius: 10px;
+}
+.botones button{
+	margin: 5px;
+	text-decoration: none;
+	background-color: white;
+	padding: 5px;
+	color: #000;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.btn-contacto {
+	display: inline-block;
+	text-decoration: none;
+	background-color: #fff; 
+	color: black;
+	border: none;
+	padding: 5px 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+	min-width: 220px; /* Misma medida para ambos */
+	text-align: center;
+  }
+  .btn-contacto:hover{
+	background-color: #25D366; /* Verde al pasar el mouse */
+  }
+  
+  /* Botón secundario (blanco por defecto) */
+  .btn-secundario {
+	color: black;
+	background-color: #fff;
+	border: none;
+	padding: 6px 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+	min-width: 220px; /* Misma medida para ambos */
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	
+}
+  
+  /* Hover del botón secundario */
+  .btn-secundario:hover {
+	background-color: #25D366; /* Verde al pasar el mouse */
+  }
+  
+  /* Hover del botón principal */
+  .btn-contacto:hover {
+	background-color: #1ebc5c;
+  }
+  .texto{
+	padding-left: 15px; /* Aleja el texto 15px del borde izquierdo */
+	margin-top: 5px;
+	text-transform: uppercase; /* Convierte todo el texto a MAYÚSCULAS */
+	word-spacing: 3px;
+	padding: 1%;
+}
+  .parrafo{
+	background-color: #222;
+	margin-top: 0px;
+  }
+footer {
+	background-color: #222;
+	padding: 20px 0;
+	text-align: center;
+	color: white;
+}
+
+.redes-sociales a {
+	color: white;
+	text-decoration: none;
+	margin: 0 15px;
+	font-size: 18px;
+	transition: color 0.3s;
+	padding: 50px;
+  }
+  
+  .redes-sociales a:hover {
+	color: #00d6ff;
+  }
+ 
+  .h2_der {
+	margin-top: -300px;
+	font-size: 30px;
+	text-align: center;
+	margin-right: 300px; /* Ajustá el valor para moverlo */
+	color: #fff;
+	white-space: nowrap; /* ✅ Mantiene todo en una sola línea */
+  }
+  
+  /* Lista con tildes azules */
+  .lista {
+	margin: 0;
+	font-size: 20px;
+	margin-top: -15px;
+	text-align: left;
+	color: #fff;
+  }
+  
+  .lista dt::before {
+	content: "✔ ";
+	color: grey; /* Tildes azules */
+	font-weight: bold;
+  }
+
+  .derecha{
+	text-align: right; /* Alinea todo el contenido a la izquierda */
+	margin-left: 700px; /* Espacio desde el borde izquierdo */
+	margin-top: 0px;
+	color: #fff;
+	text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+	animation: brillar 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes brillar {
+	from { text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff; }
+	to { text-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 50px #0ff; }
+  }
+  
+  .presupuesto{
+	color: green;
+	text-align: left;
+	font-size: 30px;
+  }
+  
+  .titulo-1{
+	font-size: 60px;
+	font-family: 'Dancing Script', cursive;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+	animation: brillar 1.5s ease-in-out infinite alternate;
+	position: relative;
+	
+  }
+
+  .cotizaciones{
+	background-color:#222;
+  }
+
+  .h4-cotizacion{
+	color: #fff;
+	word-spacing: 3px;
+	padding: 1%;
+  }
+  
+  .seccion-contacto{
+	margin-bottom: -55px;
+}
+
+.formulario {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+	background-color: #fff;
+	text-align: center;
+  }
+
+.boton-enviar {
+	background-color: green;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 40px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Esto centra el botón horizontalmente */
+	margin-top: 3%;
+}
+
+.boton-enviar:hover{ /*cambia de color cuando pasa el mouse*/
+	background-color: purple;
+}
+
+textarea.form-control { /*recuadro de mensaje*/
+	padding: 12px 150px;
+    border: none;
+    margin: 30px auto; /* centra horizontalmente y agrega margen superior */
+    border-radius: 20px;
+    width: 400px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    text-align: center;
+    resize: none; /* opcional: evita que lo agranden */
+    display: block; /* necesario para que margin:auto funcione */
+}
+
+.redes-sociales-1{
+	color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+    padding: 50px;
+}
+	  
+.redes-sociales-1 a:hover {
+	color: #00d6ff;
+
+}
+
+.seccion-contacto {
+    padding-bottom: 150px; /* Evita que el contenido quede tapado */
+}
