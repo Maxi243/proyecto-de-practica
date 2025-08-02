@@ -39,8 +39,8 @@ body {
 	margin-top: 5px;
 	text-align: left;
 	color: green;
-
 }
+
 p{
 	color: aliceblue;
 	margin: 0px;
@@ -57,13 +57,12 @@ p{
 	animation: brillar 1.5s ease-in-out infinite alternate;
 	position: relative;
 	left: 60px;
+}
 
-  }
-  
-  @keyframes brillar {
+@keyframes brillar {
 	from { text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff; }
 	to { text-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 50px #0ff; }
-  }
+}
 
 .imagen {
     width: 50%;              /* Ocupa la mitad derecha */
@@ -77,11 +76,11 @@ p{
 }
 
 .imagen2{
-	display: block;          /* Se asegura que quede en una nueva línea */
-    margin-top: 20px;        /* Espacio entre el texto y la imagen */
-    width: 80%;              /* Ocupa el 80% del ancho de la parte izquierda */
-    height: auto;            /* Mantiene proporción */
-    border-radius: 100px;     /* Bordes redondeados opcional */
+	display: block;          
+    margin-top: 20px;        
+    width: 80%;              
+    height: auto;            
+    border-radius: 100px;     
 	text-align: left;
 	position: relative;
 	left: -45px;
@@ -102,6 +101,7 @@ p{
 	text-align: center;
 	border-radius: 10px;
 }
+
 .botones button{
 	margin: 5px;
 	text-decoration: none;
@@ -123,15 +123,15 @@ p{
 	cursor: pointer;
 	font-size: 16px;
 	transition: background-color 0.3s ease;
-	min-width: 220px; /* Misma medida para ambos */
+	min-width: 220px; 
 	text-align: center;
-  }
-  .btn-contacto:hover{
-	background-color: #25D366; /* Verde al pasar el mouse */
-  }
+}
+
+.btn-contacto:hover{
+	background-color: #25D366;
+}
   
-  /* Botón secundario (blanco por defecto) */
-  .btn-secundario {
+.btn-secundario {
 	color: black;
 	background-color: #fff;
 	border: none;
@@ -140,33 +140,33 @@ p{
 	cursor: pointer;
 	font-size: 16px;
 	transition: background-color 0.3s ease;
-	min-width: 220px; /* Misma medida para ambos */
+	min-width: 220px;
 	text-align: center;
 	display: inline-block;
 	text-decoration: none;
-	
 }
   
-  /* Hover del botón secundario */
-  .btn-secundario:hover {
-	background-color: #25D366; /* Verde al pasar el mouse */
-  }
+.btn-secundario:hover {
+	background-color: #25D366;
+}
   
-  /* Hover del botón principal */
-  .btn-contacto:hover {
+.btn-contacto:hover {
 	background-color: #1ebc5c;
-  }
-  .texto{
-	padding-left: 15px; /* Aleja el texto 15px del borde izquierdo */
+}
+
+.texto{
+	padding-left: 15px;
 	margin-top: 5px;
-	text-transform: uppercase; /* Convierte todo el texto a MAYÚSCULAS */
+	text-transform: uppercase;
 	word-spacing: 3px;
 	padding: 1%;
 }
-  .parrafo{
+
+.parrafo{
 	background-color: #222;
 	margin-top: 0px;
-  }
+}
+
 footer {
 	background-color: #222;
 	padding: 20px 0;
@@ -181,57 +181,51 @@ footer {
 	font-size: 18px;
 	transition: color 0.3s;
 	padding: 50px;
-  }
+}
   
-  .redes-sociales a:hover {
+.redes-sociales a:hover {
 	color: #00d6ff;
-  }
- 
-  .h2_der {
+}
+
+.h2_der {
 	margin-top: -300px;
 	font-size: 30px;
 	text-align: center;
-	margin-right: 300px; /* Ajustá el valor para moverlo */
+	margin-right: 300px;
 	color: #fff;
-	white-space: nowrap; /* ✅ Mantiene todo en una sola línea */
-  }
+	white-space: nowrap;
+}
   
-  /* Lista con tildes azules */
-  .lista {
+.lista {
 	margin: 0;
 	font-size: 20px;
 	margin-top: -15px;
 	text-align: left;
 	color: #fff;
-  }
+}
   
-  .lista dt::before {
+.lista dt::before {
 	content: "✔ ";
-	color: grey; /* Tildes azules */
+	color: grey;
 	font-weight: bold;
-  }
+}
 
-  .derecha{
-	text-align: right; /* Alinea todo el contenido a la izquierda */
-	margin-left: 700px; /* Espacio desde el borde izquierdo */
+.derecha{
+	text-align: right;
+	margin-left: 700px;
 	margin-top: 0px;
 	color: #fff;
 	text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
 	animation: brillar 1.5s ease-in-out infinite alternate;
-  }
+}
   
-  @keyframes brillar {
-	from { text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff; }
-	to { text-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 50px #0ff; }
-  }
-  
-  .presupuesto{
+.presupuesto{
 	color: green;
 	text-align: left;
 	font-size: 30px;
-  }
+}
   
-  .titulo-1{
+.titulo-1{
 	font-size: 60px;
 	font-family: 'Dancing Script', cursive;
 	color: #fff;
@@ -239,20 +233,19 @@ footer {
 	text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
 	animation: brillar 1.5s ease-in-out infinite alternate;
 	position: relative;
-	
-  }
+}
 
-  .cotizaciones{
+.cotizaciones{
 	background-color:#222;
-  }
+}
 
-  .h4-cotizacion{
+.h4-cotizacion{
 	color: #fff;
 	word-spacing: 3px;
 	padding: 1%;
-  }
+}
   
-  .seccion-contacto{
+.seccion-contacto{
 	margin-bottom: -55px;
 }
 
@@ -264,7 +257,7 @@ footer {
 	margin-bottom: 20px;
 	background-color: #fff;
 	text-align: center;
-  }
+}
 
 .boton-enviar {
 	background-color: green;
@@ -273,25 +266,25 @@ footer {
     padding: 12px 40px;
     cursor: pointer;
     display: block;
-    margin: 0 auto; /* Esto centra el botón horizontalmente */
+    margin: 0 auto;
 	margin-top: 3%;
 }
 
-.boton-enviar:hover{ /*cambia de color cuando pasa el mouse*/
+.boton-enviar:hover{
 	background-color: purple;
 }
 
-textarea.form-control { /*recuadro de mensaje*/
+textarea.form-control {
 	padding: 12px 150px;
     border: none;
-    margin: 30px auto; /* centra horizontalmente y agrega margen superior */
+    margin: 30px auto;
     border-radius: 20px;
     width: 400px;
     background-color: #f0f0f0;
     font-size: 16px;
     text-align: center;
-    resize: none; /* opcional: evita que lo agranden */
-    display: block; /* necesario para que margin:auto funcione */
+    resize: none;
+    display: block;
 }
 
 .redes-sociales-1{
@@ -305,9 +298,122 @@ textarea.form-control { /*recuadro de mensaje*/
 	  
 .redes-sociales-1 a:hover {
 	color: #00d6ff;
-
 }
 
 .seccion-contacto {
-    padding-bottom: 150px; /* Evita que el contenido quede tapado */
+    padding-bottom: 150px;
+}
+
+
+/* ================= MEDIA QUERIES ================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .contenedor {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header_h1, .imagen, .derecha, .parrafo {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .imagen img, .imagen2 {
+        max-width: 85%;
+        margin: 15px auto;
+        display: block;
+    }
+
+    .derecha {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .h2_der {
+        margin: 20px 0 10px;
+    }
+
+    .lista {
+        text-align: center;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h1, .titulo {
+        font-size: 28px;
+        text-align: center;
+        left: 0;
+    }
+
+    .h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .h2_der {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+
+    .presupuesto {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .texto {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .imagen2 {
+        position: static;
+        margin: 10px auto;
+        width: 90%;
+    }
+
+    .lista {
+        font-size: 14px;
+    }
+
+    .botones {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .btn-contacto, .btn-secundario {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .derecha {
+        margin: 0;
+        text-align: center;
+    }
+
+    textarea.form-control {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .boton-enviar {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    footer .redes-sociales a {
+        display: block;
+        margin: 8px 0;
+        font-size: 16px;
+        padding: 10px;
+    }
 }
