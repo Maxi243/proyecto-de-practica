@@ -69,26 +69,17 @@ body {
 }
 
 /* ================== IMÁGENES ================== */
-.imagen {
-	width: 50%;
-	background-color: white;
+/* ==== IMÁGENES (COLLAGE) ==== */
+.imagen, .imagen2 {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
 }
 
-.imagen img {
-	width: 100%;
-	height: auto;
-	object-fit: cover;
-	display: block;
-}
-
-.imagen2 {
-	display: block;
-	margin-top: 20px;
-	width: 80%;
-	height: auto;
-	border-radius: 100px;
-	position: relative;
-	left: -45px;
+.imagen img, .imagen2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 /* ================== BOTONES ================== */
@@ -143,36 +134,26 @@ body {
 	padding: 10px;
 }
 
-/* ================== LISTA DERECHA ================== */
+/* ==== LISTA Y TÍTULO (posición fija al lado derecho en PC) ==== */
 .derecha {
-	position: relative; /* Mantiene ubicación original */
-	text-align: right;
-	margin-left: 700px;
-	color: #fff;
-	text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
-	animation: brillar 1.5s ease-in-out infinite alternate;
+    position: absolute;
+    top: 300px; /* Ajusta la altura para mantener collage */
+    right: 50px;
+    color: #fff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+    animation: brillar 1.5s ease-in-out infinite alternate;
+    text-align: left;
+    width: 40%;
 }
 
 .h2_der {
-	margin-top: -300px;
-	font-size: 30px;
-	text-align: center;
-	margin-right: 300px;
-	color: #fff;
-	white-space: nowrap;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
-.lista {
-	margin: 0;
-	font-size: 20px;
-	color: #fff;
-	text-align: left; /* Mantiene alineación en PC */
-}
-
-.lista dt::before {
-	content: "✔ ";
-	color: grey;
-	font-weight: bold;
+.lista dt {
+    font-size: 20px;
+    margin: 5px 0;
 }
 
 /* ================== FORMULARIO Y TEXTAREA ================== */
@@ -314,15 +295,33 @@ footer {
 .h2_der {
     font-size: 30px;
     color: #fff;
-    margin-bottom: 10px;
-    text-align: right;
+    margin: 0;
+    transform: translateX(0); /* Posición inicial */
+    transition: transform 10s ease; /* Movimiento suave */
+	margin-top: 65%;
 }
 
 .lista {
-    margin: 0;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
     font-size: 20px;
-    text-align: right; /* Como estaba originalmente */
     color: #fff;
+}
+
+/* Ejemplo: mover el título gradualmente a la derecha */
+.h2_der.mover {
+    transform: translateX(50px); /* Ajusta el valor según cuánto quieras mover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .h2_der {
+        font-size: 24px;
+    }
+    .lista {
+        font-size: 18px;
+    }
 }
 
 .lista dt::before {
@@ -349,10 +348,19 @@ footer {
     }
 }
 
-
-
-
-
+/*=============cartel luminoso===============*/
+.mensaje-luminoso {
+	background-color: hsl(131, 100%, 90%); /* color amarillo claro */
+	border: 2px solid hsl(143, 100%, 62%); /* borde amarillo brillante */
+	padding: 15px 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 15px 5px #76ff84; /* efecto de brillo */
+	font-weight: bold;
+	max-width: 400px;
+	margin: 20px auto; /* lo centra horizontalmente */
+	text-align: center;
+	color: #666600;
+  }
 
 
 
