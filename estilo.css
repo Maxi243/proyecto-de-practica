@@ -417,3 +417,22 @@ textarea.form-control {
         padding: 10px;
     }
 }
+
+	.volver{
+		color: black;
+		background-color: #fff;
+		border: none;
+		padding: 6px 16px;
+		border-radius: 8px;
+		cursor: pointer;
+		font-size: 16px;
+		transition: background-color 0.3s ease;
+		min-width: 220px;
+		text-align: center;
+		display: inline-block;
+		text-decoration: none;
+		margin: 1%;
+	}
+	.volver:hover{
+		background-color: #25D366;
+	}
