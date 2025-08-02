@@ -436,3 +436,61 @@ textarea.form-control {
 	.volver:hover{
 		background-color: #25D366;
 	}
+    
+	/* Para pantallas de hasta 600px de ancho (celulares) */
+	@media screen and (max-width: 600px) {
+  
+		.header_h1, .imagen {
+		  width: 100% !important; /* Que ocupen todo el ancho */
+		}
+		
+		.textarea.form-control {
+		  width: 90% !important;
+		  padding: 12px 15px !important; /* Reducir padding */
+		}
+		
+		.derecha {
+		  margin-left: 0 !important;
+		  text-align: center !important;
+		}
+		
+		.botones {
+		  flex-direction: column;
+		}
+		
+		.botones .btn-contacto, .btn-secundario {
+		  min-width: auto;
+		  width: 90%;
+		  margin: 5px auto;
+		}
+	  
+		.imagen2 {
+		  position: static !important;
+		  left: 0 !important;
+		  margin: 10px auto;
+		  width: 70% !important;
+		}
+		
+		.titulo {
+		  font-size: 36px !important;
+		  left: 0 !important;
+		  text-align: center !important;
+		}
+	  
+		.h1, .h2, .presupuesto {
+		  text-align: center !important;
+		}
+	  }
+
+
+
+
+
+
+
+
+
+
+
+
+
