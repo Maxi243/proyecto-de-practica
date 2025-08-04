@@ -11,7 +11,7 @@ function enviarWhatsApp() {
   // Cierra el teclado en móvil si está abierto
   textarea.blur();
 
-  const numero = "5491127537296"; // Tu número en formato internacional
+  const numero = "5491132973511"; // Tu número en formato internacional
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
   window.open(url, "_blank");
 }

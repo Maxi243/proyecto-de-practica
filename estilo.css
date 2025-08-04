@@ -2,10 +2,13 @@
 body {
 	margin: 0;
 	padding: 0;
-	max-width: 100vw;
-	overflow-x: hidden;
+	max-width: 100vw;   /*nunca mas ancho que la ventana*/
+	overflow-x: hidden;   /*oculta cualquier texto horizontal*/
 	background-color: #000;
 	font-family: Arial, sans-serif;
+}
+* {
+    box-sizing: border-box;
 }
 
 /* ================== CONTENEDOR PRINCIPAL ================== */
@@ -107,9 +110,10 @@ body {
 	border-radius: 8px;
 	cursor: pointer;
 	font-size: 16px;
-	min-width: 220px;
+	min-width: 20px;
 	text-align: center;
 	transition: background-color 0.3s ease;
+	margin-bottom: 20px;  /*agrega separación inferior*/
 }
 
 .btn-contacto:hover,
@@ -120,18 +124,22 @@ body {
 
 /* ================== SECCIONES DE TEXTO ================== */
 .texto {
-	padding: 1%;
-	margin-top: 5px;
-	text-transform: uppercase;
-	word-spacing: 3px;
-	color: aliceblue;
-	text-align: left;
+    max-width: 1200px; /* limita el ancho máximo del texto */
+    width: 100%;
+    color: aliceblue;
+    text-align: justify; /* distribuye el texto */
+    text-transform: uppercase;
+    word-spacing: 3px;
+    overflow-wrap: break-word; /* evita que palabras largas rompan diseño */
 }
 
 .parrafo {
-	background-color: #222;
-	margin-top: 0;
-	padding: 10px;
+    grid-column: 1 / span 2; /* ocupa ambas columnas */
+    background-color: #222;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* centra el contenido */
 }
 
 /* ==== LISTA Y TÍTULO (posición fija al lado derecho en PC) ==== */
@@ -203,27 +211,38 @@ textarea.form-control {
 
 /* ================== FOOTER ================== */
 footer {
-	background-color: #222;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	margin-top: auto;
+    grid-column: 1 / span 2;
+    background-color: #222;
+    color: white;
+    width: 100%;           /* ocupa solo el ancho de la pantalla */
+    max-width: 100vw;       /* no se pasa del viewport */
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;       /* previene contenido desbordado */
+    display: flex;
+    justify-content: center;
 }
 
-.redes-sociales a,
-.redes-sociales-1 a {
-	color: white;
-	text-decoration: none;
-	margin: 0 15px;
-	font-size: 18px;
-	transition: color 0.3s;
-	display: inline-block;
-	padding: 10px;
+.redes-sociales {
+    max-width: 1200px; /* contenido centrado y limitado */
+    width: 100%;
+}
+.redes-sociales a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+    display: inline-block;
+    word-wrap: break-word; /* evita desbordes por links largos */
 }
 
 .redes-sociales a:hover,
 .redes-sociales-1 a:hover {
 	color: #00d6ff;
+}
+footer, .parrafo, .contenedor {
+    outline: 1px solid green; /* borde para debug */
 }
 
 /* ================== RESPONSIVE ================== */
@@ -362,7 +381,19 @@ footer {
 	color: #666600;
   }
 
-
+  @media (max-width: 1024px) {
+    footer {
+        padding: 15px;
+    }
+    .redes-sociales {
+        max-width: 90%;
+    }
+    .redes-sociales a {
+        display: block;
+        margin: 8px 0;
+        font-size: 16px;
+    }
+}
 
 
 
