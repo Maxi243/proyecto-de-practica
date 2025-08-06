@@ -51,6 +51,17 @@ body {
 	left: 60px;
 }
 
+.right {
+    width: 100px;
+}
+
+.container {
+    display: flex;                /* Activa Flexbox */
+    align-items: center;          /* Centra verticalmente título e imagen */
+    justify-content: space-between; /* Separa título a la izquierda e imagen a la derecha */
+    height: 200px;
+}
+
 .h2 {
 	font-size: 48px;
 	margin-top: 5px;
@@ -179,6 +190,19 @@ body {
 	text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
 	animation: brillar 1.5s ease-in-out infinite alternate;
 	margin: 20px 0;
+}
+
+.container-1 {
+    display: flex;
+    align-items: center;      /* Centra verticalmente */
+    justify-content: flex-start; /* Todo alineado a la izquierda */
+    height: 200px;
+    gap: 20px; /* NUEVO: Espacio automático entre el título y la imagen */
+	
+}
+
+.right-1 {
+    width: 100px;
 }
 
 textarea.form-control {
@@ -394,6 +418,12 @@ footer, .parrafo, .contenedor {
         font-size: 16px;
     }
 }
+
+
+
+
+
+
 
 
 
